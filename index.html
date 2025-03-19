@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previsione Lotteria</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Previsione Lotteria</h1>
+        
+        <div class="input-section">
+            <div class="input-row">
+                <label>Numeri ritardatari assoluti:</label>
+                <div class="number-inputs">
+                    <input type="number" min="1" max="90" class="number-input ritardatari-assoluti">
+                    <input type="number" min="1" max="90" class="number-input ritardatari-assoluti">
+                    <input type="number" min="1" max="90" class="number-input ritardatari-assoluti">
+                    <input type="number" min="1" max="90" class="number-input ritardatari-assoluti">
+                    <input type="number" min="1" max="90" class="number-input ritardatari-assoluti">
+                    <input type="number" min="1" max="90" class="number-input ritardatari-assoluti">
+                </div>
+            </div>
+            
+            <div class="input-row">
+                <label>Numeri ritardatari 10eLotto:</label>
+                <div class="number-inputs">
+                    <input type="number" min="1" max="90" class="number-input ritardatari-10elotto">
+                    <input type="number" min="1" max="90" class="number-input ritardatari-10elotto">
+                    <input type="number" min="1" max="90" class="number-input ritardatari-10elotto">
+                    <input type="number" min="1" max="90" class="number-input ritardatari-10elotto">
+                    <input type="number" min="1" max="90" class="number-input ritardatari-10elotto">
+                    <input type="number" min="1" max="90" class="number-input ritardatari-10elotto">
+                </div>
+            </div>
+            
+            <div class="input-row">
+                <label>Numeri frequenti 10eLotto:</label>
+                <div class="number-inputs">
+                    <input type="number" min="1" max="90" class="number-input frequenti-10elotto">
+                    <input type="number" min="1" max="90" class="number-input frequenti-10elotto">
+                    <input type="number" min="1" max="90" class="number-input frequenti-10elotto">
+                    <input type="number" min="1" max="90" class="number-input frequenti-10elotto">
+                    <input type="number" min="1" max="90" class="number-input frequenti-10elotto">
+                    <input type="number" min="1" max="90" class="number-input frequenti-10elotto">
+                </div>
+            </div>
+            
+            <div class="input-row">
+                <label>Numeri ritardatari Oro:</label>
+                <div class="number-inputs">
+                    <input type="number" min="1" max="90" class="number-input ritardatari-oro">
+                    <input type="number" min="1" max="90" class="number-input ritardatari-oro">
+                    <input type="number" min="1" max="90" class="number-input ritardatari-oro">
+                    <input type="number" min="1" max="90" class="number-input ritardatari-oro">
+                    <input type="number" min="1" max="90" class="number-input ritardatari-oro">
+                    <input type="number" min="1" max="90" class="number-input ritardatari-oro">
+                </div>
+            </div>
+            
+            <div class="input-row">
+                <label>Numeri ritardatari Extra:</label>
+                <div class="number-inputs">
+                    <input type="number" min="1" max="90" class="number-input ritardatari-extra">
+                    <input type="number" min="1" max="90" class="number-input ritardatari-extra">
+                    <input type="number" min="1" max="90" class="number-input ritardatari-extra">
+                    <input type="number" min="1" max="90" class="number-input ritardatari-extra">
+                    <input type="number" min="1" max="90" class="number-input ritardatari-extra">
+                    <input type="number" min="1" max="90" class="number-input ritardatari-extra">
+                </div>
+            </div>
+        </div>
+        
+        <div class="buttons">
+            <button id="generate-btn">Genera Previsione</button>
+            <button id="reset-btn">Reset</button>
+        </div>
+        
+        <div class="prediction-section">
+            <h2>La tua previsione:</h2>
+            <div class="prediction-results">
+                <div class="prediction-group">
+                    <h3>Prima estrazione (3 numeri + oro):</h3>
+                    <div id="prediction1" class="prediction-numbers"></div>
+                </div>
+                <div class="prediction-group">
+                    <h3>Seconda estrazione (3 numeri):</h3>
+                    <div id="prediction2" class="prediction-numbers"></div>
+                </div>
+                <div class="prediction-group">
+                    <h3>Terza estrazione (3 numeri):</h3>
+                    <div id="prediction3" class="prediction-numbers"></div>
+                </div>
+                <div class="prediction-group">
+                    <h3>Quarta estrazione (1 numero):</h3>
+                    <div id="prediction4" class="prediction-numbers"></div>
+                </div>
+                <div class="prediction-group">
+                    <h3>Quinta estrazione (2 numeri):</h3>
+                    <div id="prediction5" class="prediction-numbers"></div>
+                </div>
+                <div class="prediction-group">
+                    <h3>Sesta estrazione (2 numeri):</h3>
+                    <div id="prediction6" class="prediction-numbers"></div>
+                </div>
+                <div class="prediction-group special">
+                    <h3>"Che culo!" (numero fortunato):</h3>
+                    <div id="lucky-number" class="prediction-numbers"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
